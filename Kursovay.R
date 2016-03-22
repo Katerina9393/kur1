@@ -15,7 +15,7 @@ eddy = subset(eddy, as.Date(date) >= as.Date("2013-05-01") & as.Date(date) <= as
 
 round(cor(x = eddy[ , c("H", "qc_H", "rand_err_H", "co2_flux", "h2o_flux")]), 2)
 library(ggplot2)
-# Это типо модель
+#  модель
 mod = lm(
   co2_flux 
   ~
